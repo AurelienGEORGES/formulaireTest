@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire</title>
 </head>
+
 <body>
+    <form action="contact.php" method="get">
+        
+        <label>Nom</label>
+
+             <input name="Nom"  type="text" placeholder="surname" />
+
+         <label >prénom</label>
+
+            <input  name="Prénom" type="text" placeholder="firstname" />
+
+        <label >@ email</label>
+
+             <input name="mailNom" type="email" placeholder="yourmailhere" />
+
+         <label>phone</label>
     
+        <input  name="phonenumber" type="tel" placeholder="yourphonenumber" />
+        
+        <label>adresse</label>
+
+        <input  name="address" type="text" placeholder="yourlocation" />
+       
+        <input type="submit" value="Submit">Envoyer</input>
+        <input type="reset" value="Reset">Annuler</input>
+
+    </form>
+
+    
+   
 </body>
+
 </html>
