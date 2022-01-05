@@ -13,23 +13,31 @@
         
         <label>Nom</label>
 
-             <input name="Nom"  type="text" placeholder="surname" />
+             <input name="Nom"  type="text" placeholder="surname" pattern="[A-Za-z]+" minlength="3" required/>
 
          <label >prénom</label>
 
-            <input  name="Prénom" type="text" placeholder="firstname" />
+            <input  name="Prénom" type="text" placeholder="firstname" pattern="[A-Za-z]+" minlength="3" required/>
 
         <label >@ email</label>
 
-             <input name="mailNom" type="email" placeholder="yourmailhere" />
+             <input name="mailNom" type="email" placeholder="yourmailhere" list="defaultEmails" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2, 4}$" required/>
+
+             <datalist id="defaultEmails">
+                <option value="jbond007@mi6.defence.gov.uk">
+                <option value="jbourne@unknown.net">
+                <option value="nfury@shield.org">
+                <option value="tony@starkindustries.com">
+                <option value="hulk@grrrrrrrr.arg">
+              </datalist>
 
          <label>phone</label>
     
-        <input  name="phonenumber" type="tel" placeholder="yourphonenumber" />
+        <input  name="phonenumber" type="tel" placeholder="yourphonenumber" pattern="[0-9]{10}" required/>
         
         <label>adresse</label>
 
-        <input  name="address" type="text" placeholder="yourlocation" />
+        <input  name="address" type="text" placeholder="yourlocation" required/>
        
         <input type="submit" value="Submit">Envoyer</input>
         <input type="reset" value="Reset">Annuler</input>
