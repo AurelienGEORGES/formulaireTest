@@ -39,7 +39,14 @@ $formulaire =  [
     "address"=> $address,
 ];
 
+
+
 print_r($formulaire);
+
+if(empty($name) || empty($surname) || empty($adresse) || empty($tel) || empty($email)){
+    echo "tous les champs sont requis";
+}
+?>
 
 ?>
 
